@@ -7,7 +7,7 @@ function minimumOfLine(text) {
 		var line = input[i].split(' ');
 		var lineMin = '';
 		for (var n = 0; n < line.length; n++) {
-			lineMin = (lineMin < parseInt(line[n])) ? lineMin : line[n];
+			lineMin = (parseInt(lineMin) < parseInt(line[n])) ? lineMin : line[n];
 		}
 		output += (lineMin + ' ');
 	}
